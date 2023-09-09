@@ -41,12 +41,13 @@
   }
 
   .error-message {
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    width: 30%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     display: inline-block;
-    font-size: larger;
+    font-size: large;
     margin-top: 20px;
-    padding: 30px;
+    padding: 15px;
     background: #eee;
     color: red;
   }
@@ -95,7 +96,7 @@
   
   form {
     position: relative;
-    width: 480px;
+    width: 40%;
     margin: 30px auto 20px auto;
     background: #fff;
     padding: 15px;
@@ -140,11 +141,17 @@
     .note-container{
       width: 50%;    
     }
+    .error-message {width: 90%; font-size: 16px; padding: 5px;}
+    form {
+      width: 90%;
+
+    }
   }
   
   @media screen and (max-width: 468px) {
     .note-container{
       width: 100%;
+
     }
   }
   
