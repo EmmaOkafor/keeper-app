@@ -8,14 +8,12 @@
   }
   body {
     background: #eee;
-    padding: 0 16px;
     background-image: url("https://www.transparenttextures.com/patterns/triangular.png");
   }
   
   header {
-    /* background-color: #f5ba13; */
+    width: 100%;
     background-color: #4649FF;
-    margin: auto -16px;
     padding: 16px 32px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
@@ -37,18 +35,44 @@
   footer p {
     color: #ccc;
   }
+
+  .create-area {
+    text-align: center;
+  }
+
+  .error-message {
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: inline-block;
+    font-size: larger;
+    margin-top: 20px;
+    padding: 30px;
+    background: #eee;
+    color: red;
+  }
+  .note-container{
+    width: 20%;
+    float: left;
+  
+  }
+
+
   .note {
     background: #fff;
     border-radius: 7px;
     box-shadow: 0 2px 5px #ccc;
     padding: 10px;
-    width: 240px;
     margin: 16px;
     float: left;
+    width:90%;
+    
   }
+    
   .note h1 {
-    font-size: 1.1em;
-    margin-bottom: 6px;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
   }
   .note p {
     font-size: 1.1em;
@@ -103,5 +127,24 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     outline: none;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .note-container{
+      width: 25%;   
+    }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .note-container{
+      width: 50%;    
+    }
+  }
+  
+  @media screen and (max-width: 468px) {
+    .note-container{
+      width: 100%;
+    }
   }
   
